@@ -775,7 +775,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   padding-top: 80px;
-  min-height: 100vh;
+  min-height: 70vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -4231,6 +4231,110 @@ section,
     padding: 12px 25px;
     font-size: 14px;
   }
+}
+
+/*--------------------------------------------------------------
+# Project Cards (text-only)
+--------------------------------------------------------------*/
+.portfolio .project-card {
+  height: 100%;
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 12px;
+  padding: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.portfolio .project-card .project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.portfolio .project-card .project-category {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+.portfolio .project-card .project-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 50%;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--default-color), transparent 92%);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.portfolio .project-card .project-link:hover {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.portfolio .project-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.portfolio .project-card .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.portfolio .project-card .project-tags .tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.portfolio .project-card .project-highlights {
+  margin-bottom: 0;
+}
+
+.portfolio .project-card .project-highlights li {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.portfolio .project-card .project-highlights li:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio .project-card .project-highlights li i {
+  color: var(--accent-color);
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 3px;
 }
 
 /*--------------------------------------------------------------
