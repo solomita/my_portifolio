@@ -4250,6 +4250,16 @@ section,
   box-shadow: 0 12px 30px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+.portfolio .project-card .project-thumb {
+  width: calc(100% + 56px);
+  margin: -28px -28px 20px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 12px 12px 0 0;
+  display: block;
+}
+
 .portfolio .project-card .project-head {
   display: flex;
   justify-content: space-between;
@@ -4267,6 +4277,11 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   padding: 5px 12px;
   border-radius: 4px;
+}
+
+.portfolio .project-card .project-links {
+  display: flex;
+  gap: 8px;
 }
 
 .portfolio .project-card .project-link {
